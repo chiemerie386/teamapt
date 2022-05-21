@@ -1,0 +1,288 @@
+@keyframes mymove {
+  0% {
+    bottom: 5%;
+  }
+  50% {
+    bottom: 30%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}
+@keyframes spin {
+  from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(359deg);
+   }
+ }
+
+ @keyframes Star1 {
+  0% {
+    bottom: 0%;
+  }
+
+  50% {
+    right: 53%;
+    bottom: 20%;
+  }
+
+  100% {
+    right: 51%;
+    bottom: 37%;
+    display: none;
+  }
+}
+
+@keyframes Star2 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    right: 55%;
+    bottom: 23%;
+  }
+  100% {
+    right: 59%;
+    bottom: 45%;
+    display: none;
+  }
+}
+
+@keyframes Star3 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    right: 45%;
+    bottom: 25%;
+  }
+  100% {
+    right: 40%;
+    bottom: 40%;
+    display: none;
+  }
+}
+
+@keyframes Star4 {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    right: 40%;
+    bottom: 25%;
+  }
+  100% {
+    right: 35%;
+    bottom: 50%;
+    display: none;
+  }
+}
+
+@keyframes rightmove {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: 25%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes rotatemove {
+ from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes rotate1 {
+from { -webkit-transform: rotate(0deg); }
+to { -webkit-transform: rotate(20deg); }
+}
+ 
+@-moz-keyframes rotate1 {
+from { -moz-transform: rotate(0deg); }
+to { -moz-transform: rotate(20deg); }
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ecab03;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  min-width: 225px;
+  font-family: "Inter";
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: 220px;
+  margin-left: 42%;
+  color: white;
+  
+}
+.bottom{
+  /* background-color: pink; */
+  display:flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  position:relative;
+  padding-top:40px;
+
+}
+
+.goldStack {
+  width: 425px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.firstCoin {
+  width: 145px;
+  position: absolute;
+  left: 30%;
+  bottom: 5%;
+  transform: translate(-30%, 0);
+  animation: mymove 5s infinite;
+}
+.secondCoin {
+  width: 145px;
+  position: absolute;
+  left: 75%;
+  transform: translate(-70%, 0);
+  bottom: 0%;
+  animation: rightmove 5.1s infinite;
+}
+
+.goldLight {
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  transform: translate(-50%, 0);
+}
+
+.whiteStar {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+ 
+}
+.first {
+ animation: Star1 10s infinite;
+}
+
+.second {
+ animation: Star2 7s infinite ;
+}
+.third {
+ animation: Star3 8s infinite;
+}
+.fourth {
+ animation: Star4 9s infinite;
+}
+.star1 {
+  position: absolute;
+  left: 20%;
+  bottom: 3%;
+}
+.star3 {
+  position: absolute;
+  left: 20%;
+  bottom: 65%;
+}
+.star2 {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+}
+
+.spinning-light {
+  width: 450px;
+height: 750px;
+position: absolute;
+bottom: 0;
+left: 50%;
+background-image: linear-gradient(
+  180deg,
+  rgba(255, 229, 0, 0) -1.18%,
+  rgba(255, 230, 9, 0) 3.33%,
+  rgba(255, 231, 23, 0.003) 10.55%,
+  rgba(255, 233, 36, 0.006) 17.77%,
+  rgba(255, 234, 47, 0.010) 25.89%,
+  rgba(255, 234, 56, 0.033) 34.01%,
+  rgba(255, 235, 62, 0.051) 42.13%,
+  rgba(255, 236, 67, 0.093) 51.15%,
+  rgba(255, 236, 70, 0.13) 60.17%,
+  rgba(255, 236, 71, 0.21) 71.89%
+);
+  transform-origin: center bottom;
+clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+
+
+}
+
+.main-spinner {
+position: relative;
+width: 200px;
+height: 100%;
+bottom: -140px;
+left: -90%;
+transform-origin: center bottom;
+animation: spin 45.1s infinite reverse linear;
+}
+
+.main-spinner .first {
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.main-spinner .second {
+transform: translateX(-50%) rotate(60deg);
+}
+
+.main-spinner .third {
+transform: translateX(-50%) rotate(120deg);
+}
+
+.main-spinner .fourth {
+transform: translateX(-50%) rotate(180deg);
+}
+
+.main-spinner .fifth {
+transform: translateX(-50%) rotate(240deg);
+}
+
+.main-spinner .sixth {
+transform: translateX(-50%) rotate(300deg);
+}
+
+@media screen and (max-width: 600px) {
+  .goldLight{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  .goldStack {
+    width: 100vw;
+  }
+  .firstCoin {
+  left: 5%;
+}
+.secondCoin {
+  left: 90%;
+}
+
+.button {
+  margin-left: 20%;
+}
+
+}
