@@ -1,0 +1,109 @@
+
+.main-body{
+    background: url('../../images/top-stars.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 40px 175px 0px 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .top-stars{
+    background: url('../../images/top-stars.png');
+    background-size: auto;
+    width:100vw;
+  
+  }
+  .main-text{
+    color: white;
+    font-size: 4rem;
+    text-align:center;
+    font-weight: 300;
+    line-height: 55px;
+    font-family: "Poppins";
+  }
+  
+  .main-text > span{
+    display:block;
+  }
+  .bold-text{
+    font-weight: 800;
+  }
+  .other-text{
+    margin-top: 20px;
+    color: white;
+    text-align:center;
+    font-size: 1.6rem;
+    font-family: "Inter";
+  }
+  .other-text > span{
+    display:block;
+  }
+  .title-text{
+    font-weight: 600;
+    text-align:center;
+    font-size:16px;
+  }
+  .list-text{
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .list-text > p{
+    font-size: 13px;
+  }
+  .list-text > div > div{
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  
+  .desc-card{
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.39) -213.5%, rgba(255, 255, 255, 0.0) 100%);
+    box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17), inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+    padding: 25px 20px;
+    margin-top:20px;
+    color: white;
+    text-align: left;
+    max-width: 355px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+  .small-card{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding:18px 6px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    font-size : 0.7rem;
+  }
+  .bulb-text{
+    padding-right: 5px ;
+    font-size: 20px;
+  
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    body{
+      font-size:1px
+    }
+    .main-body{
+      margin: 4%;
+      margin-top: 12%;
+  
+    }
+    .main-text{
+    font-size: 2.3rem;
+    line-height: 35px;
+    }
+    .other-text{
+      font-size: 1.1rem;
+    }
+    .other-text > span{
+      display:inline;
+    }
+    .main-text > span{
+      display:inline;
+    }
+  }
